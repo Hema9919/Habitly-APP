@@ -1,9 +1,9 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { useState } from "react";
 
-import Home from "./pages/Home";
-import Progress from "./pages/Progress";
-import About from "./pages/About";
+import Home from "./pages/home";
+import Progress from "./pages/progress";
+import About from "./pages/about";
 import Layout from "./Layout";
 
 export const habitsarr = [
