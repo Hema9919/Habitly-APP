@@ -1,0 +1,27 @@
+احفظ الجملة دي
+
+لو الـ State الجديدة مبنية على الـ State القديمة → استخدم prev.
+
+لو هتستبدل القيمة بقيمة ثابتة → مش محتاج prev.
+
+أكثر 5 استخدامات هتقابلها في الشغل
+// Number
+setCount(prev => prev + 1);
+
+// Boolean
+setOpen(prev => !prev);
+
+// Array
+setItems(prev => [...prev, item]);
+
+// Delete from Array
+setItems(prev => prev.filter(item => item.id !== id));
+
+// Update Object inside Array
+setItems(prev =>
+  prev.map(item =>
+    item.id === id
+      ? { ...item, done: !item.done }
+      : item
+  )
+);
